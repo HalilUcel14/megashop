@@ -1,0 +1,65 @@
+{
+    // Olası öznitelikler hakkında bilgi edinmek için IntelliSense kullanın.
+    // Mevcut özniteliklerin açıklamalarını görüntülemek için üzerine gelin.
+    // Daha fazla bilgi için şu adresi ziyaret edin: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "akilli_dukkan",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "akilli_dukkan (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "akilli_dukkan (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "feauture",
+            "cwd": "modules\\feauture",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "feauture (profile mode)",
+            "cwd": "modules\\feauture",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "feauture (release mode)",
+            "cwd": "modules\\feauture",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "theme",
+            "cwd": "modules\\theme",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "theme (profile mode)",
+            "cwd": "modules\\theme",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "theme (release mode)",
+            "cwd": "modules\\theme",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}
