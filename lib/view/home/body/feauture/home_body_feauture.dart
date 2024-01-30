@@ -16,11 +16,11 @@ class _BodyFeauture extends StatelessWidget {
                   path: IconEnum.store.png,
                   size: AppSize.teta.toDouble(),
                 ),
-                PrimaryText(
+                const PrimaryText(
                   text: "Fatura Kayıt",
                   styleType: TextStyles.headlineMedium,
                 ),
-                NormalText(
+                const NormalText(
                   text:
                       "Selam arkadaşlar bu modül sayesinde faturalarnızı kayıt edebilirsiniz.",
                   styleType: TextStyles.titleLarge,
