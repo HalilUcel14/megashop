@@ -5,67 +5,45 @@ class _BodyHomeField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        imageContainer(),
-        Container().withSizedBox(height: 1000, width: double.infinity),
-        // Row(
-        //   children: [
-        //     aspectIcon(),
-        //   ],
-        // ).withSizedBox(height: 600, width: double.infinity),
-      ],
-    );
+    return imageContainer(context);
   }
 
-  Widget imageContainer() {
+  Widget imageContainer(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: 1000,
-      child: Center(
-        child: Container(
-          padding: EdgeInsets.all(16),
-          decoration: BoxDecoration(
-            color: Colors.amber,
-            borderRadius: BorderRadius.circular(36),
-          ),
-          child: const PrimaryText(
-            text: 'İşletmem',
-            styleType: TextStyles.displayMedium,
-            style: TextStyle(fontWeight: FontWeight.bold),
-          ),
-        ),
-      ),
+      height: ViewHigh.large.size,
+      //
       decoration: BoxDecoration(
         image: DecorationImage(
           fit: BoxFit.cover,
-          opacity: 0.8,
-          image: AssetImage(ImageEnum.home.jpg),
+          opacity: ViewOpacity.high.size,
+          image: AssetImage(
+            ImageEnum.home.jpg,
+          ),
         ),
       ),
+      child: imageChild(context),
     );
   }
 
-  Widget aspectIcon() {
-    return AspectRatio(
-      aspectRatio: 16 / 9,
-      child: WIconAsset(
-        size: AppSize.teta.toDouble(),
-        path: ImageEnum.home.jpg,
-      ),
-    );
-  }
-
-  Widget aspectTitle() {
-    return const AspectRatio(
-      aspectRatio: 1,
-      child: Column(
-        children: [
-          PrimaryText(
-            text: 'Maaliyet',
-            styleType: TextStyles.displayMedium,
+  Center imageChild(BuildContext context) {
+    return Center(
+      child: Container(
+        padding: EdgeInsets.all(AppSize.ennea.toDouble()),
+        decoration: BoxDecoration(
+          color: context.colorScheme.primaryContainer,
+          borderRadius: BorderRadius.circular(
+            AppSize.tetra.toDouble(),
           ),
-        ],
+        ),
+        child: PrimaryText(
+          text: "${HomeViewText.tr['appName']}",
+          styleType: TextStyles.displayMedium,
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            color: context.colorScheme.onPrimaryContainer,
+          ),
+        ),
       ),
     );
   }

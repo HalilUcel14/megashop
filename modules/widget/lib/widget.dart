@@ -1,7 +1,4 @@
-library widget;
-
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+export './asset/index.dart';
+export './button/index.dart';
+export './enum/index.dart';
+export './on_error/index.dart';

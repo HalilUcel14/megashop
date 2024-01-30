@@ -8,9 +8,11 @@ class _HomeBody extends StatelessWidget {
     return Center(
       child: SingleChildScrollView(
         controller: AppScroll.homeScroll,
-        child: const Column(
+        child: Column(
           children: [
-            _BodyHomeField(),
+            const _BodyHomeField(),
+            const _BodyFeauture(),
+            Container().withSizedBox(height: 1000, width: double.infinity),
           ],
         ),
       ),

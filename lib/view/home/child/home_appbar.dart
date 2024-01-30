@@ -9,7 +9,7 @@ class _HomeAppBar extends StatelessWidget
   AppBar build(BuildContext context) {
     return AppBar(
       toolbarHeight: AppView.appBarSize.height,
-      actions: [
+      actions: const [
         ThemeButton(),
       ],
     );

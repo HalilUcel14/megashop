@@ -11,5 +11,8 @@ final class DarkTheme extends ITheme {
         colorScheme: colorScheme,
         textTheme: WTextTheme(colorScheme.onBackground),
         primaryTextTheme: WTextTheme(colorScheme.primary),
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.transparent,
+        ),
       );
 }

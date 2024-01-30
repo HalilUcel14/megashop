@@ -1,9 +1,9 @@
-import 'package:feauture/feauture.dart';
 import 'package:flutter/material.dart';
+import 'package:widget/widget.dart';
 
 @immutable
-final class NormalText extends Text {
-  const NormalText({
+final class PrimaryText extends Text {
+  const PrimaryText({
     super.key,
     required this.text,
     required this.styleType,
@@ -30,29 +30,29 @@ final class NormalText extends Text {
   TextStyle? _style(BuildContext context) {
     switch (styleType) {
       case TextStyles.displayLarge:
-        return Theme.of(context).textTheme.displayLarge;
+        return Theme.of(context).primaryTextTheme.displayLarge;
       case TextStyles.displayMedium:
-        return Theme.of(context).textTheme.displayMedium;
+        return Theme.of(context).primaryTextTheme.displayMedium;
       case TextStyles.displaySmall:
-        return Theme.of(context).textTheme.displaySmall;
+        return Theme.of(context).primaryTextTheme.displaySmall;
       case TextStyles.headlineLarge:
-        return Theme.of(context).textTheme.headlineLarge;
+        return Theme.of(context).primaryTextTheme.headlineLarge;
       case TextStyles.headlineMedium:
-        return Theme.of(context).textTheme.headlineMedium;
+        return Theme.of(context).primaryTextTheme.headlineMedium;
       case TextStyles.headlineSmall:
-        return Theme.of(context).textTheme.headlineSmall;
+        return Theme.of(context).primaryTextTheme.headlineSmall;
       case TextStyles.titleLarge:
-        return Theme.of(context).textTheme.titleLarge;
+        return Theme.of(context).primaryTextTheme.titleLarge;
       case TextStyles.titleMedium:
-        return Theme.of(context).textTheme.titleMedium;
+        return Theme.of(context).primaryTextTheme.titleMedium;
       case TextStyles.titleSmall:
-        return Theme.of(context).textTheme.titleSmall;
+        return Theme.of(context).primaryTextTheme.titleSmall;
       case TextStyles.labelLarge:
-        return Theme.of(context).textTheme.labelLarge;
+        return Theme.of(context).primaryTextTheme.labelLarge;
       case TextStyles.labelMedium:
-        return Theme.of(context).textTheme.labelMedium;
+        return Theme.of(context).primaryTextTheme.labelMedium;
       case TextStyles.labelSmall:
-        return Theme.of(context).textTheme.labelSmall;
+        return Theme.of(context).primaryTextTheme.labelSmall;
     }
   }
 

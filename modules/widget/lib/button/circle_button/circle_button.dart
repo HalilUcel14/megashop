@@ -10,12 +10,7 @@ final class CircleButton extends ElevatedButton {
     super.onHover,
     super.onLongPress,
     super.statesController,
-    ButtonStyle? styles,
     required super.onPressed,
     required super.child,
-  }) : super(
-          style: styles?.copyWith(
-            shape: const MaterialStatePropertyAll(CircleBorder()),
-          ),
-        );
+  }) : super(style: ElevatedButton.styleFrom(shape: const CircleBorder()));
 }

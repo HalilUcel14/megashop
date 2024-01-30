@@ -1,5 +1,6 @@
 import 'package:feauture/feauture.dart';
 import 'package:flutter/material.dart';
+import 'package:widget/widget.dart';
 
 import '../../mixin/splash/splash_mixin.dart';
 
