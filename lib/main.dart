@@ -1,9 +1,9 @@
-import 'package:akilli_dukkan/core/starter/app_theme.dart';
 import 'package:feauture/feauture.dart';
 import 'package:flutter/material.dart';
 
 import 'core/route/route.dart';
 import 'core/starter/app_string.dart';
+import 'core/starter/app_theme.dart';
 import 'core/starter/app_valuelistener.dart';
 
 Future<void> main() async {

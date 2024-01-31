@@ -16,7 +16,7 @@ class _BodyHomeField extends StatelessWidget {
       decoration: BoxDecoration(
         image: DecorationImage(
           fit: BoxFit.cover,
-          opacity: ViewOpacity.high.size,
+          opacity: OpacityEnum.high.size,
           image: AssetImage(
             ImageEnum.home.jpg,
           ),
@@ -29,18 +29,17 @@ class _BodyHomeField extends StatelessWidget {
   Center imageChild(BuildContext context) {
     return Center(
       child: Container(
-        padding: EdgeInsets.all(AppSize.ennea.toDouble()),
+        padding: AppSize.ennea.withPaddingAll,
+        //
         decoration: BoxDecoration(
           color: context.colorScheme.primaryContainer,
-          borderRadius: BorderRadius.circular(
-            AppSize.tetra.toDouble(),
-          ),
+          borderRadius: AppSize.tetra.radiusCircle,
         ),
-        child: PrimaryText(
+        //
+        child: PrimaryBoldText(
           text: "${HomeViewText.tr['appName']}",
           styleType: TextStyles.displayMedium,
           style: TextStyle(
-            fontWeight: FontWeight.bold,
             color: context.colorScheme.onPrimaryContainer,
           ),
         ),
